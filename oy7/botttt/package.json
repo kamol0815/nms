@@ -1,0 +1,28 @@
+{
+  "name": "livestock-management-bot",
+  "version": "2.0.0",
+  "description": "Professional Telegram bot for cattle and sheep management with advanced features",
+  "main": "working_bot.js",
+  "type": "module",
+  "scripts": {
+    "start": "node working_bot.js",
+    "dev": "node --watch working_bot.js",
+    "basic": "node bot.js"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "livestock",
+    "cattle",
+    "sheep",
+    "professional",
+    "farming",
+    "management"
+  ],
+  "author": "@km0815",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "telegraf": "^4.16.3"
+  }
+}

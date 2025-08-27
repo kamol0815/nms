@@ -1,0 +1,25 @@
+{
+  "mollar": [
+    {
+      "id": 1,
+      "ogirlik": 300,
+      "yosh": 8,
+      "tur": "Mahalliy",
+      "qoshilganSana": "18/08/2025",
+      "oxirgiEmlash": null,
+      "oxirgiOvqatSana": "18/08/2025",
+      "bugungiOvqat": true
+    },
+    {
+      "id": 2,
+      "ogirlik": 200,
+      "yosh": 12,
+      "tur": "Angus",
+      "qoshilganSana": "18/08/2025",
+      "oxirgiEmlash": null,
+      "oxirgiOvqatSana": null,
+      "bugungiOvqat": false
+    }
+  ],
+  "qoylar": []
+}
