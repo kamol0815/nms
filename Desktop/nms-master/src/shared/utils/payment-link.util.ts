@@ -57,7 +57,11 @@ function extractGlobalPrefix(url: URL): string | undefined {
 export function resolvePaymentLinkBase(): string | undefined {
   const explicitBase = config.PAYMENT_LINK_BASE_URL?.trim();
   if (explicitBase) {
-    return sanitizeBase(explicitBase);
+    const sanitized = sanitizeBase(explicitBase);
+    // Agar explicitBase faqat base URL bo'lsa (masalan: http://213.230.110.176:9990)
+    // API prefix va route prefix qo'shamiz
+    const apiPrefix = config.API_PREFIX?.trim() || DEFAULT_GLOBAL_PREFIX;
+    return `${sanitized}/${apiPrefix}/${ROUTE_PREFIX}`;
   }
 
   const fallbackCandidates = [
